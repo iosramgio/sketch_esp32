@@ -8,25 +8,7 @@ Repositori ini berisi kode sumber (*firmware*) mikrokontroler **ESP32** yang dig
 
 Berikut adalah diagram arsitektur menyeluruh dari sistem *smart glove* IoT hingga pemrosesan model *deep learning* dan antarmuka pengguna:
 
-```mermaid
-graph TD
-    subgraph Hardware Layer [Perangkat Keras - Smart Glove]
-        A[Flex Sensor & IMU MPU6050] -->|Analog/Digital Data| B[ESP32 Microcontroller]
-    end
-
-    subgraph Communication Layer [Lapisan Komunikasi]
-        B -->|MQTT Protocol over Wi-Fi| C[MQTT Broker / Cloud Server]
-    end
-
-    subgraph Processing & Interface Layer [Sistem Backend & Aplikasi]
-        C -->|Time-Series Data| D[1D CNN-LSTM Model Python]
-        D -->|Prediction Result| E[Desktop GUI / Antarmuka Pengguna]
-    end
-
-    style B fill:#f9f,stroke:#333,stroke-width:2px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-    style E fill:#bfb,stroke:#333,stroke-width:2px
-🛠️ Komponen Perangkat Keras
+##🛠️ Komponen Perangkat Keras
 Mikrokontroler: ESP32 NodeMCU Module (Wi-Fi Integrated)
 
 Sensor Lentur (Flex Sensor): Dipasang pada jari-jari sarung tangan untuk mendeteksi tekukan.
@@ -35,14 +17,14 @@ Sensor Gerak (IMU MPU6050): Mengukur orientasi, percepatan, dan kecepatan sudut 
 
 Catu Daya: Baterai Li-Po yang terintegrasi dengan modul pengisi daya.
 
-📡 Alur Komunikasi Data
+##📡 Alur Komunikasi Data
 Pembacaan Sensor: ESP32 mengumpulkan data mentah dari flex sensor dan IMU secara kontinyu.
 
 Konversi & Prapemrosesan: Data dikonversi menjadi format deret waktu (time-series).
 
 Transmisi MQTT: Data dikirimkan secara nirkabel menggunakan protokol MQTT ke broker tujuan untuk diproses oleh model 1D CNN-LSTM.
 
-⚙️ Panduan Instalasi & Penggunaan
+##⚙️ Panduan Instalasi & Penggunaan
 Prasyarat
 Arduino IDE atau PlatformIO
 
