@@ -5,8 +5,9 @@ Dokumentasi mengenai komponen perangkat keras, alur komunikasi data, serta pandu
 ---
 
 ## 🏗️ Arsitektur Sistem
-![alt text](?raw=true)
-
+![alt text]([?raw=true](https://github.com/iosramgio/sketch_esp32/blob/main/public/diagram.png))
+![alt text]([?raw=true](https://github.com/iosramgio/sketch_esp32/blob/main/public/diagram.png))
+---
 ## 🛠️ Komponen Perangkat Keras
 - **Mikrokontroler:** ESP32 NodeMCU Module (Wi-Fi Integrated)
 - **Sensor Lentur (Flex Sensor):** Dipasang pada jari-jari sarung tangan untuk mendeteksi tekukan.
