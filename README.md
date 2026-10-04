@@ -5,7 +5,7 @@ Dokumentasi mengenai komponen perangkat keras, alur komunikasi data, serta pandu
 ---
 
 ## 🏗️ Arsitektur Sistem
-
+![alt text](?raw=true)
 
 ## 🛠️ Komponen Perangkat Keras
 - **Mikrokontroler:** ESP32 NodeMCU Module (Wi-Fi Integrated)
